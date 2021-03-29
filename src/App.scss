@@ -1,0 +1,41 @@
+@import './commons/colors.scss';
+
+.app-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .title {
+    font-size: 16px;
+    color: $white;
+    font-weight: 500;
+    user-select: none;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    word-break: break-word;
+
+    &.bold {
+      font-weight: 500;
+    }
+  }
+
+  .normal-text {
+    font-size: 14px;
+    color: $white;
+    user-select: none;
+    line-height: 1.5;
+    word-break: break-word;
+
+    &.bold {
+      font-weight: 500;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    height: 50px;
+    width: 180px;
+    align-self: center;
+    cursor: pointer;
+  }
+}

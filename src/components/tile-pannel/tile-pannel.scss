@@ -1,0 +1,68 @@
+.tile-pannel-container {
+    margin-top: 5px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column-reverse;
+    max-height: 770px;
+
+    .x-blocks-line {
+      display: flex;
+      flex-direction: row;
+      padding-left: 50px;
+      text-align: center;
+      padding-top: 20px;
+
+      span {
+        width: 50px;
+        min-width: 50px;
+        font-size: 12px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+
+    .y-blocks-container {
+      display: flex;
+      flex-direction: row;
+      padding-left: 50px;
+      position: relative;
+
+      span {
+        position: absolute;
+        font-size: 12px;
+        align-self: center;
+        font-weight: 500;
+        color: black;
+        left: 20px;
+      }
+
+      .x-blocks-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 48px;
+        min-height: 48px;
+        width: 48px;
+        height: 48px;
+        border: solid black 1px;
+
+        &.choosen {
+          background-color: green;
+        }
+
+        &.irrigated {
+            background-color: lightblue;
+        }
+
+        &.with-cursor {
+            cursor: pointer;
+        }
+
+        img {
+          user-select: none;
+          height: 50%;
+          width: 50%;
+        }
+      }
+    }
+  }

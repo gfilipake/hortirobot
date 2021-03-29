@@ -1,0 +1,53 @@
+@import "../../commons/colors.scss";
+
+.robot-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 800px;
+
+  .blocks-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+
+    .x-blocks-line {
+      display: flex;
+      flex-direction: row;
+      padding-left: 50px;
+      text-align: center;
+      padding-top: 20px;
+
+      span {
+        width: 50px;
+        font-size: 12px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+
+    .y-blocks-container {
+      display: flex;
+      flex-direction: row;
+      padding-left: 50px;
+      position: relative;
+
+      span {
+        position: absolute;
+        font-size: 12px;
+        align-self: center;
+        font-weight: 500;
+        color: black;
+        left: 20px;
+      }
+
+      .x-blocks-container {
+        min-width: 48px;
+        min-height: 48px;
+        width: 48px;
+        height: 48px;
+        border: solid black 1px;
+      }
+    }
+  }
+}

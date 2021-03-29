@@ -1,0 +1,28 @@
+@import "../../commons/colors.scss";
+
+.start-screen-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 800px;
+
+  .double-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .input-field-container {
+      width: 48%;
+    }
+  }
+
+  .robot-direction-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .hort-span {
+    margin-top: 10px;
+  }
+}
